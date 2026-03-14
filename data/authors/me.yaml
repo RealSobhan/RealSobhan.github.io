@@ -39,10 +39,12 @@ links:
 #    url: https://orcid.org/0000-0002-1825-0097
 
 interests:
-  - Operations Research
   - Data Science & Machine Learning
-  - Optimization (Meta-heuristics & Exact Methods)
   - Stochastic Systems
+  - Reinforcement Learning
+  - Sequential Decision Making
+  - Operations Research
+
 
 education:
 #  - degree: PhD in Operations Management
