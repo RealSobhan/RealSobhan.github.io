@@ -17,7 +17,7 @@ status:
   icon: "🎓"
 role: Industrial Engineering Student
 bio: |
-  I am currently an undergraduate student ranking within the top 10% of my program at Sharif University of Technology. My academic journey is driven by a deep fascination with modeling real-world challenges mathematically and solving them using advanced algorithms.
+  I am currently an undergraduate student at Sharif University of Technology. My academic journey is driven by a deep fascination with modeling real-world challenges mathematically and solving them using algorithms.
 
 affiliations:
   - name: Sharif University of Technology
@@ -32,7 +32,7 @@ links:
   - icon: brands/github
     url: https://github.com/RealSobhan
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/your-linkedin-id/
+    url: https://www.linkedin.com/in/SobhanKasaei/
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/citations?user=example
 #  - icon: academicons/orcid
@@ -63,7 +63,7 @@ education:
     institution: Sharif University of Technology
     start: 2021-09-23
     summary: |
-      Currently ranking within the top 10% of the program. Focused on operations research, data science, and applying machine learning algorithms to solve complex optimization problems.
+      Focused on operations research, data science, and applying machine learning algorithms to solve complex optimization problems.
     button:
       text: Download CV
       url: /resume.pdf
@@ -92,9 +92,9 @@ skills:
       - label: Python
         level: 5
       - label: PyTorch
-        level: 4
+        level: 3
       - label: Gurobi
-        level: 5
+        level: 
       - label: Machine Learning
         level: 4
   - name: Research & Modeling
