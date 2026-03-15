@@ -1,9 +1,17 @@
-// Make the navbar logo circular and elegant
-.navbar-brand img {
+/* Force the logo/icon in the navigation bar to be circular */
+.navbar-brand img, 
+.navbar-logo img,
+.logo img,
+#logo img {
   border-radius: 50% !important;
-  aspect-ratio: 1/1 !important;
+  aspect-ratio: 1 / 1 !important;
   object-fit: cover !important;
-  height: 40px !important;
   width: 40px !important;
-  border: 1px solid #e5e7eb; // Adds a very subtle light border to define the circle
+  height: 40px !important;
+  background-color: transparent !important;
+}
+
+/* Optional: If there's a container holding the logo, make it transparent too */
+.navbar-brand {
+  background-color: transparent !important;
 }
