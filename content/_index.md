@@ -48,11 +48,11 @@ sections:
       title: '📚 About Me'
       subtitle: ''
       text: |-
-        "I am an undergraduate student in Industrial Engineering with a minor in Economics at Sharif University of Technology. My academic focus sits right at the intersection of Operations Research, Machine Learning, and Stochastic Modeling.
+        I am an undergraduate student in Industrial Engineering with a minor in Economics at Sharif University of Technology. My academic focus sits right at the intersection of Operations Research, Machine Learning, and Stochastic Modeling.
         
         What really fascinates me are sequential decision-making problems—especially stochastic ones. I love them because they perfectly mirror the unpredictable, step-by-step choices we make in our daily lives. My goal is to use data-driven tools to untangle these kinds of complex scenarios.
         
-        Lately, I’ve been diving deep into Reinforcement Learning (RL) and Deep Learning to see how they can redefine traditional OR. For example, instead of relying solely on classic exact solvers, I'm exploring how we can use modern approaches like Graph Neural Networks (GNNs) or RL agents to tackle classic combinatorial challenges like the Traveling Salesperson Problem (TSP) in fresh ways."
+        Lately, I’ve been diving deep into Reinforcement Learning (RL) and Deep Learning to see how they can redefine traditional OR. For example, instead of relying solely on classic exact solvers, I'm exploring how we can use modern approaches like Graph Neural Networks (GNNs) or RL agents to tackle classic combinatorial challenges like the Traveling Salesperson Problem (TSP) in fresh ways.
     design:
       columns: '1'
 
