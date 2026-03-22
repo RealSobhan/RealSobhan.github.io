@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Sobhan Kasaei - Industrial Engineering Student at Sharif University of Technology. Specialized in Operations Research, Optimization, and Machine Learning."
+    description: "Sobhan Kasaei: IE student at Sharif Univ (Econ Minor). Focused on Operations Research, stochastic modeling, statistical ML and reinforcement learning."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "MakeOwnable"              # Twitter/X handle for Twitter Cards (without @)
