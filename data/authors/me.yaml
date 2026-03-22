@@ -97,20 +97,26 @@ skills:
     items:
       - label: Python
         level: 5
-      - label: PyTorch
-        level: 3
-      - label: Gurobi
-        level: 
       - label: Machine Learning
+        level: 5
+      - label: Mathematical Programming Tools
+        level: 5
+      - label: PyTorch & Deep Learning
+        level: 4
+      - label: Git & LaTeX
         level: 4
   - name: Research & Modeling
     items:
-      - label: Mathematical Optimization
-        level: 5
       - label: Meta-heuristic Algorithms
         level: 5
-      - label: Data Analysis
+      - label: Mathematical Optimization
         level: 4
+      - label: Stochastic Processes & Modeling
+        level: 4
+      - label: Statistical Inference & Hypothesis Testing
+        level: 4
+      - label: Bayesian Statistics
+        level: 3
 
 languages:
   - name: Persian
