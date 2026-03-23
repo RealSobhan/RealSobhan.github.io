@@ -8,6 +8,11 @@ tags:
   - Stata & Python
   - Instrumental Variables (IV)
 date: '2026-03-22'
+links:
+  - icon: github
+    icon_pack: fab
+    name: Source Code & Data
+    url: https://github.com/SobhanKasaei/EconometricsProject
 
 image:
   caption: 'Conceptual econometric visualization created via Google Gemini'
