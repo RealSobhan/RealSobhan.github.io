@@ -7,7 +7,7 @@ tags:
   - Python (From Scratch)
   - Data Analysis (R & Pandas)
   - Healthcare
-date: '2025-12-01'
+date: '2026-3-22'
 
 # تنظیمات عکس هدر (نمودار بازه اطمینان را به عنوان عکس اصلی می‌گذاریم)
 image:
