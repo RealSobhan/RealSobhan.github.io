@@ -19,7 +19,7 @@ image:
 ## Project Overview
 This project focuses on the stochastic modeling and optimization of patient flow within a multi-department hospital. Rather than using commercial simulation software or standard libraries, **I developed a custom Discrete-Event Simulation (DES) engine entirely from scratch using Python.** The core objective was to model the complex routing of Elective and Non-Elective (Emergency) patients through various stages—including Pre-Surgical wards, Laboratories, Operating Rooms (OR), and Post-Surgical units (Ward, ICU, CCU)—to identify bottlenecks and improve overall system stability.
 
-{{< figure src="hospital-flowchart.svg" title="Event-Driven Logic: Patient Arrival and Process Flow" caption="This flowchart illustrates the core patient arrival event that triggers the simulation logic. It maps the subsequent stochastic routing, priority-based queuing for non-elective (emergency) cases, and the step-by-step transition of entities through the hospital's constrained resources." >}}
+{{< figure src="hospital-arrival-flowchart.svg" title="Event-Driven Logic: Patient Arrival and Process Flow" caption="This flowchart illustrates the core patient arrival event that triggers the simulation logic. It maps the subsequent stochastic routing, priority-based queuing for non-elective (emergency) cases, and the step-by-step transition of entities through the hospital's constrained resources." >}}
 
 ## Mathematical & Statistical Framework
 Building a custom simulation engine from the ground up requires rigorous mathematical validation, particularly for analyzing stochastic processes, estimating steady-state parameters, and comparing alternative configurations.
@@ -31,7 +31,7 @@ $$ \bar{W} \pm t_{\alpha/2, n-1} \frac{S}{\sqrt{n}} $$
 
 Where $\bar{W}$ is the sample mean of waiting times, $S$ is the sample standard deviation across replications, and $t_{\alpha/2, n-1}$ represents the critical value from the Student's t-distribution. This rigorous bounding was dynamically computed in Python and visualized using R.
 
-{{< figure src="steady-state-ci.png" title="Steady-State Mean Waiting Time Analysis" caption="Visualizing the moving average of total waiting time with bounded 95% confidence intervals, comparing current and proposed system configurations." >}}
+{{< figure src="sensitivity-analysis.png" title="Sensitivity & Output Analysis: Resource Utilization" caption="Point and interval estimation (95% Confidence Interval) for Key Performance Indicators across 30 independent replications. This analysis reveals critical bottlenecks in the Pre-Surgical and Ward units, while highlighting the underutilization of Operating Room (OR) capacities." >}}
 
 **2. Time-Average Queue Evaluation:**
 The core logic of the simulation continuously evaluates the expected queue length over time $T$. The time-average number of patients in the queue, a critical metric for capacity planning, is computed as the integral of the system state:
@@ -51,7 +51,7 @@ $$ \nu = \frac{(S_1^2/n_1 + S_2^2/n_2)^2}{\frac{(S_1^2/n_1)^2}{n_1-1} + \frac{(S
 
 If this confidence interval strictly excludes zero, it mathematically guarantees that the observed improvements (e.g., reduced waiting times) are due to the strategic changes in system capacity, rather than mere stochastic noise.
 
-{{< figure src="scenario-comparison.png" title="KPI Comparison: Baseline vs. Optimized Capacity Allocation" caption="Statistical comparison demonstrating the impact of resource reallocation on maximum queue lengths across different hospital departments." >}}
+{{< figure src="warmup-analysis.png" title="Warm-up Period Determination (Moving Average Method)" caption="Moving average analysis (140-frame window) of pre-surgical waiting times across 50 independent replications. The vertical dashed line identifies the truncation point (day 412.5), marking the end of the transient phase. This ensures initialization bias is eliminated before conducting the steady-state evaluation over a 2,500-day horizon." >}}
 
 ## System Analysis & Optimization Results
 By comparing the baseline system with proposed what-if scenarios, the simulation provided actionable insights for hospital management:
