@@ -17,7 +17,7 @@ status:
   icon: "🎓"
 role: Industrial Engineering Student
 bio: |
-  I am currently an undergraduate student at Sharif University of Technology. My academic journey is driven by a deep fascination with modeling real-world challenges mathematically and solving them using algorithms.
+  I am an undergraduate student at Sharif University of Technology. I simply enjoy translating real-world problems into mathematical models and finding efficient ways to solve them.
 
 affiliations:
   - name: Sharif University of Technology
@@ -69,7 +69,7 @@ education:
     institution: Sharif University of Technology
     start: 2021-09-23
     summary: |
-      Focused on operations research, data science, and applying machine learning algorithms to solve complex optimization problems.
+      Specialized in operations research and statistics, leveraging these quantitative foundations to explore advanced topics including machine learning, stochastic processes, and deep reinforcement learning.
     button:
       text: Download CV
       url: uploads/SobhanKasaei_CV.pdf
@@ -97,14 +97,16 @@ skills:
     items:
       - label: Python
         level: 5
+        icon: devicon/python
       - label: Machine Learning
         level: 5
-      - label: Mathematical Programming Tools
-        level: 5
+        icon: devicon/scikitlearn
       - label: PyTorch & Deep Learning
         level: 4
+        icon: devicon/pytorch
       - label: Git & LaTeX
         level: 4
+        icon: devicon/git
   - name: Research & Modeling
     items:
       - label: Meta-heuristic Algorithms
