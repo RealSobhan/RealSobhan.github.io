@@ -1,0 +1,39 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $resource := partial "functions/get_image" $item }}
+
+<a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="block group hover:no-underline h-full">
+  <div class="flex flex-col h-full bg-white dark:bg-neutral-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-neutral-800">
+    
+    {{ if $resource }}
+    <div class="relative w-full aspect-[16/9] overflow-hidden bg-gray-100 dark:bg-neutral-800">
+      <img src="{{ $resource.RelPermalink }}" alt="{{ $item.Title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+    </div>
+    {{ end }}
+    
+    <div class="p-6 flex flex-col flex-grow">
+      
+      {{ if $item.Params.tags }}
+      <div class="flex flex-wrap gap-2 mb-4">
+        {{ range $item.Params.tags }}
+        <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-300 border border-primary-200 dark:border-primary-800/50">
+          {{ . }}
+        </span>
+        {{ end }}
+      </div>
+      {{ end }}
+      
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{{ $item.Title }}</h3>
+      
+      {{ with $item.Summary }}
+      <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</a>
