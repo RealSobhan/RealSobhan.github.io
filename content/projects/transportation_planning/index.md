@@ -18,7 +18,7 @@ links:
   - icon: brands/github
     icon_pack: fab
     name: Code & Models
-    url: https://github.com/SobhanKasaei/Transportation-Planning-Project
+    url: https://github.com/SobhanKasaei/PredictionAndOptimization-GreenTaxi-NYC
 ---
 
 ## Project Overview & Philosophy
